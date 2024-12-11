@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import axios from 'axios'
 import Navbar from './components/Navbar'
 import ChampionGrid from './components/ChampionGrid'
@@ -34,7 +34,7 @@ function App() {
   if (loading) return <div className="text-center p-4">Loading champions...</div>
 
   return (
-    <Router basename="/LOLChecker">
+    <Router>
       <div className="min-h-screen bg-gray-900 text-white">
         <Navbar />
         <Routes>
