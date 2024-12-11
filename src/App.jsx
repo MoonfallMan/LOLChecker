@@ -34,7 +34,7 @@ function App() {
   if (loading) return <div className="text-center p-4">Loading champions...</div>
 
   return (
-    <Router basename="/league">
+    <Router basename="/LOLChecker">
       <div className="min-h-screen bg-gray-900 text-white">
         <Navbar />
         <Routes>
